@@ -118,4 +118,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/' #This is the beginning URL for the href of the webpage to load
+# in the files from the static folder"
+STATICFILES_DIR = (os.path.join(BASE_DIR, "static"),)
+#This just tells static tag where to find the files
